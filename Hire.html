@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="change.css">
+    <title>Job</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul class="menu">
+                    <li class="logo">
+                        <!-- change the name of logo according to your name of image (mani/vengu) -->
+                        <a href="#"><img src="p2.png" alt="Placeme Logo" style="height: 30px;"></a>
+                    </li>
+                    <div class="item">
+                        
+                    
+                        <li ><a href="{% url 'job_seeker:home' %}"><i class="fa-solid fa-house"></i>Home</a></li>
+                    </div>
+                    <div class="item">
+                        
+                    
+                        <li><a href="{% url 'job_seeker:job' %}"><i class="fa-solid fa-briefcase"></i>Jobs</a></li>
+                    </div>
+                    <div class="item">
+                        <li><a href="{% url 'job_seeker:profile' %}"><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                    </div>
+                    
+                    <li class="item button"><a href="{% url 'job_seeker:profile' %}"><i class="fa-solid fa-user"></i> 
+                      Profile</a></li>
+                    <li class="toggle" id="menu-toggle"><span class="bars"></span></li>
+                    <li class="item button"><a href="{% url 'auth:login' %}">Log In</a></li>
+                    <li class="item">
+                        <select name="Usertypes" onchange="location = this.value;">
+                            <option value="{% url 'job_seeker:home' %}">Job Seeker</option>
+                            <option value="{% url 'recruiters:home' %}">Recruiter</option>
+                            <option value="{% url 'administrator:dashboard' %}">Administrator</option>
+                            <option value="{% url 'refer_and_earn:home' %}">Refer and earn</option>
+                        </select> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+        <!--sub nav bar list-->
+        
+            <div class="all-menu">
+                <ul class="menu-item">
+                    <li class="save"><a>Saved(3)</a></li>
+                    <li class="applied"><a>Applied(3)</a></li>
+                    <li class="offer"><a>My Offers(0)</a></li>
+                </ul>
+            </div>
+        
+        <section class="dev-list">
+         <div class="left">
+            <div class="left-insert">
+
+
+                <div class="left-dev-info">
+    
+    
+    
+                
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <h2 class="junior">Junior Developer</h2>
+                            <p class="company-name">Kavery Tech</p>
+                        </div>
+                        <div class="company-logo"></div>
+                    </div>
+            
+                    <div class="job-details">
+                        <p class="details-row">
+                            <span><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka </span>
+                            <span><i class="fa fa-briefcase"></i> 0-2 Years</span>
+                          </p>
+                          <p class="details-row">
+                            <span><i class="fas fa-clock"></i> Full Time</span>
+                            <span><i class="fa fa-indian-rupee-sign"></i> 30000/Month</span>
+                            <span><i class="fa fa-graduation-cap"></i> B Tech</span>
+                            <span><i class="fa fa-laptop"></i> On-Site</span>
+                          </p>
+                        <div class="skills">
+                            <span>Html</span>
+                            <span>Java</span>
+                            <span>Javascript</span>
+                            <span>Angular</span>
+                            <span>Django</span>
+                            <span>C</span>
+                            <span>CPP</span>
+                        </div>
+                        <p3 class="description">
+                            We passionate web developer and designer with a results-driven mindset. Among my priorities when working on any project is to implement effective...
+                        </p3>
+                    </div>
+            
+                    <div class="job-footer">
+                        <span>4 days ago</span>
+                        <span>30 openings</span>
+                        <span>10 applied</span>
+                        <input type="checkbox" id="bookmark1" class="bookmark-checkbox">
+                            <label for="bookmark1">
+                                <i class="fas fa-bookmark bookmark-icon"></i>
+                            </label>
+                        
+                    </div>
+                </div>
+    
+               </div>
+    
+              </div>
+         </div>
+         <div class="right">
+
+
+
+
+          
+
+         </div>
+
+
+
+
+            
+
+            
+        </section>
+
+    
+    
+</body>
+</html>

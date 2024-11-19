@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    
+}
+body {
+    font-family: sans-serif;
+    background-color: #c0c5f2;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+.all-menu{
+    margin-left: 120px;
+    margin-right: 20px;
+    
+    background-color: rgb(255, 255, 255);
+    width: 1210px;
+    border-radius: 15px;
+    margin-top: 80px;
+    position: sticky;
+    top: 61px;
+    border-bottom: 3px solid #141B5F;
+    z-index: 5;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+.save,.applied,.offer{
+    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    font-weight: 600;
+    
+}
+.save a,.applied a,.offer a{
+    color: #141B5F;
+}
+.save a:hover,.applied a:hover,.offer a:hover{
+    color: #FF8C00;
+    
+}
+.all-menu ul li a,
+.all-menu ul li a:after,
+.all-menu ul li a:before {
+  transition: all .5s;
+}
+
+
+  /*.try{
+    height: 1000px;
+    background-color: black;
+}*/
+.dev-list{
+    min-height: 1000px;
+    height: auto;
+    width: 1210px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+
+    flex-direction: row;
+    align-items: stretch;
+
+}
+
+
+
+/* Add a gradient line below the navbar */
+/*.all-menu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the line */
+    /*border-bottom: 2px solid transparent; /* For the border-image effect */
+    /*border-image: linear-gradient(to right, #9DAAF2, #141b5f, #141b5f, #141b5f, #141b5f, #141b5f, #9DAAF2); /* Gradient line */
+    /*border-image-slice: 1; /* Ensures the gradient is applied evenly */
+/*}*/
+@media screen and (min-width:1366px) {
+    .all-menu{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .dev-list{
+        margin-right: 70px;
+        margin-left: 70px;
+        background-color: brown;
+    }
+}
+@media screen and (min-width:1367px) {
+    .all-menu{
+        margin-left: 140px;
+        margin-right: 70px;
+    }
+    .dev-list{
+        margin-right: 70px;
+        margin-left: 140px;
+        background-color: blue;
+    }
+}
+
+
+.left{
+    /*min-height: 1000px;*/
+    height: auto;
+    width: 70%;
+    /*background-color: aquamarine;*/
+    border-top-right-radius: 15px;
+    
+    z-index: 2;
+    border-bottom-right-radius: 15px;
+    display: block;
+}
+.left-dev-info{
+    /*background-color: bisque;*/
+    /*min-height: 100vh;*/
+    height: auto;
+    margin-left: 15px;
+    z-index: 1;
+    border-bottom-right-radius: 15px;
+    background-color: burlywood;
+    
+
+}
+.left-insert{
+    /*background-color: red;*/
+    /*min-height: 100vh;*/
+    height: auto;
+    background-color: #e70303;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-grow: 1;
+    
+}
+
+.left .left-insert{
+    overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive design*/
+/*iphone SE*/
+@media all and (min-width:375px) {
+    .save ,.applied,.offer{
+        font-size: 12px;
+      
+    }
+    
+}
+/*iphone XR*/
+@media all and (min-width:414px) {
+    .save,.applied,.offer{
+        font-size: 14px;
+    }
+}
+/*iphone 12 pro*/
+@media all and (min-width:390px) {
+    .save,.applied,.offer{
+        font-size: 13px;
+    }
+}
+/*samsung galaxy s8+*/
+@media screen and (min-width:360px) {
+    .save,.applied,.offer{
+        font-size: 12px;
+    }
+}
+/*samsung galaxy s20 ultra*/
+@media screen and (min-width:412px) {
+    .save,.applied,.offer{
+        font-size: 14px;
+    }
+}
+/*samsung galaxy s20 ultra*/
+@media screen and (min-width:768px) {
+    .save,.applied,.offer{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:786px) {
+    .save,.applied,.offer{
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:820px) {
+    .save,.applied,.offer{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .save,.applied,.offer{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:912px) {
+    .save,.applied,.offer{
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:540px) {
+    .save,.applied,.offer{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:344px) {
+    .save,.applied,.offer{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width:853px) {
+    .save,.applied,.offer{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:412px) {
+    .save,.applied,.offer{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .save,.applied,.offer{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .save,.applied,.offer{
+        font-size: 18px;
+    }
+}
+
