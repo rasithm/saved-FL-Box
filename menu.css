@@ -95,7 +95,7 @@ body {
     /*border-image: linear-gradient(to right, #9DAAF2, #141b5f, #141b5f, #141b5f, #141b5f, #141b5f, #9DAAF2); /* Gradient line */
     /*border-image-slice: 1; /* Ensures the gradient is applied evenly */
 /*}*/
-@media screen and (min-width:1366px) {
+@media screen and (max-width:1366px) {
     .all-menu{
         margin-left: 70px;
         margin-right: 70px;
